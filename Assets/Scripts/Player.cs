@@ -3,15 +3,16 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
     public int power = 1;
-    public EnnemyManager _ennemyManager;
-    public RessourcesManager rm;
-    private bool isAutoclick;
-    public float timeBetClick = 1f;
+    private MonsterManager monsterManager;
+    private RessourcesManager rm;
+    
+    private bool _isAutoClick;
+    private float _timeBetClick = 1f;
 
 
     public void LaunchAutoclick()
     {
-        if(isAutoclick)
+        if(_isAutoClick)
         {
             return;
         }
@@ -23,8 +24,8 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            _ennemyManager.currentEnnemy.Attack(1);
-            yield return new WaitForSeconds(timeBetClick);
+            monsterManager.currentMonster.Attacked(1);
+            yield return new WaitForSeconds(_timeBetClick);
         }
     }
 
@@ -32,19 +33,15 @@ public class Player : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(_ennemyManager != null)
+            if(monsterManager != null)
             {
-                _ennemyManager.currentEnnemy.Attack(power);
+                monsterManager.currentMonster.Attacked(power);
             }
         }
     }
 
     public void AddPower()
     {
-        if(rm.CanSpendCaillou(5))
-        {
-            rm.ChangeCaillouAmount(-5);
-            power += 1;
-        }
+        power += 1;
     }
 }

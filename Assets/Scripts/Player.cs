@@ -2,29 +2,35 @@ using UnityEngine;
 using System.Collections;
 public class Player : MonoBehaviour
 {
-    public int power = 1;
+    private int _clickPower = 1;
+    private int _autoPower = 0;
     private MonsterManager monsterManager;
     private RessourcesManager rm;
     
     private bool _isAutoClick;
     private float _timeBetClick = 1f;
 
-
-    public void LaunchAutoclick()
+    public void Start()
     {
-        if(_isAutoClick)
-        {
-            return;
-        }
         StartCoroutine(AutoClick());
 
     }
 
+    public void ActivateOrPowerUpAutoClick()
+    {
+        _isAutoClick = true;
+        _autoPower++;
+    }
+
     private IEnumerator AutoClick()
     {
-        while (true)
+        while (!_isAutoClick)
         {
-            monsterManager.currentMonster.Attacked(1);
+            yield return new WaitForSeconds(_timeBetClick);
+        }
+        while (_isAutoClick)
+        {
+            monsterManager.currentMonster.Attacked( _autoPower);
             yield return new WaitForSeconds(_timeBetClick);
         }
     }
@@ -35,13 +41,13 @@ public class Player : MonoBehaviour
         {
             if(monsterManager != null)
             {
-                monsterManager.currentMonster.Attacked(power);
+                monsterManager.currentMonster.Attacked(_clickPower);
             }
         }
     }
 
     public void AddPower()
     {
-        power += 1;
+        _clickPower += 1;
     }
 }

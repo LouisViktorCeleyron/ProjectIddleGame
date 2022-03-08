@@ -9,6 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785566c5d05b4bd4d908189d8fbf4615, type: 3}
-  m_Name: Racaillou
+  m_Script: {fileID: 11500000, guid: e060bb9b83cde4b49825dfabc71a4cfa, type: 3}
+  m_Name: Dragon
   m_EditorClassIdentifier: 
+  appeareance: {fileID: 21300000, guid: f245e1d0b8a63bc4ca920e41a4747cb3, type: 3}
+  gold: 20
+  hp: 100
+  diamondRate: 100

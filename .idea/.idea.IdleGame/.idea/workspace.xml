@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91ff5d2e-d438-4d90-96e4-80d69ab82f7d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/074.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/074.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Caillou.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Caillou.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cayou.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cayou/Diamand.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cayou/Diamand.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cayou/Racaillou.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Cayou/Racaillou.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CoroutineTest.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CoroutineTest.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ennemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ennemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnnemyData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnnemyData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnnemyManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnnemyManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Movement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Movement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RessourcesManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RessourcesManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ennemy/Diamand.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ennemy/Diamand.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ennemy/Racaillou.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ennemy/Racaillou.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/074.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/074.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +32,7 @@
       <option value="$PROJECT_DIR$/Assets/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ActionStructure.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/RessourcesManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="266dQeKzGbZbddVU2JZefiuNDI3" />
@@ -73,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646747959793</updated>
-      <workItem from="1646747977303" duration="3377000" />
+      <workItem from="1646747977303" duration="4719000" />
     </task>
     <servers />
   </component>

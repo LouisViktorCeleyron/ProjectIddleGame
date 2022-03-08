@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785566c5d05b4bd4d908189d8fbf4615, type: 3}
-  m_Name: Diamand
+  m_Script: {fileID: 11500000, guid: e060bb9b83cde4b49825dfabc71a4cfa, type: 3}
+  m_Name: Slime
   m_EditorClassIdentifier: 
-  gold: 55
-  hp: 4
-  couleur: {r: 1, g: 0.84050083, b: 0, a: 0}
+  appeareance: {fileID: 21300000, guid: 695e3d8876a51964f8029c793b22c507, type: 3}
+  gold: 2
+  hp: 10
+  diamondRate: 30

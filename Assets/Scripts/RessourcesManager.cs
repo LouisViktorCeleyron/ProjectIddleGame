@@ -6,11 +6,12 @@ public class RessourcesManager : MonoBehaviour
     
     [SerializeField] private Text textGold;
     [SerializeField] private Text textDiamonds;
-    
-    private int goldAmount;
-    private int diamondsAmount;
+
+    [SerializeField] private int goldAmount;
+    [SerializeField] private int diamondsAmount;
 
     [SerializeField] private ActionStructure[] actions;
+  
 
     #region RessourceManagement
 
@@ -71,20 +72,20 @@ public class RessourcesManager : MonoBehaviour
             ChangeGoldAmount(-actionToApply.goldCost);
             ChangeDiamondAmount(-actionToApply.diamondCost);
             actionToApply.action.Invoke();
-            ActionCalledPositivFeedback(); //Et on appel un feedback positif
+            ActionCalledPositiveFeedback(); //Et on appel un feedback positif
         }
         
         ActionCalledNegativeFeedback();//On appel un feedback negatif si l'achat est impossible
     }
 
-    private void ActionCalledPositivFeedback()
+    private void ActionCalledPositiveFeedback()
     {
-        
+        Debug.Log("PositiveFeedback");
     }
 
     private void ActionCalledNegativeFeedback()
     {
-        
+        Debug.Log("NegativeFeedback");
     }
 
     #endregion

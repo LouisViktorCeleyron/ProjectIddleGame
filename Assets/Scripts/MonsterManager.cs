@@ -15,7 +15,7 @@ public class MonsterManager : MonoBehaviour
 
     public void PickMonster()
     {
-        _currentData = datas[0];
+        _currentData = datas[Random.Range(0,datas.Length)];
     }
 
     public void CreateMonster()

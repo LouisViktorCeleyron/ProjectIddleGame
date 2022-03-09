@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
 public class Player : MonoBehaviour
 {
     private int _clickPower = 1;
     private int _autoPower = 0;
-    private MonsterManager monsterManager;
-    private RessourcesManager rm;
+    [SerializeField] private MonsterManager monsterManager;
+    [SerializeField] private RessourcesManager rm;
     
     private bool _isAutoClick;
     private float _timeBetClick = 1f;
@@ -13,7 +14,6 @@ public class Player : MonoBehaviour
     public void Start()
     {
         StartCoroutine(AutoClick());
-
     }
 
     public void ActivateOrPowerUpAutoClick()

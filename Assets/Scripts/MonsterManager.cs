@@ -4,7 +4,7 @@ public class MonsterManager : MonoBehaviour
 {
     public RessourcesManager ressourcesManager;
     public Player player;
-    public MonsterData[] datas;
+    public WeightedList<MonsterData> datas;
     private MonsterData _currentData;
     public Monster currentMonster;
 
@@ -15,7 +15,7 @@ public class MonsterManager : MonoBehaviour
 
     public void PickMonster()
     {
-        _currentData = datas[Random.Range(0,datas.Length)];
+        _currentData = datas.GetRandomElement();
     }
 
     public void CreateMonster()
